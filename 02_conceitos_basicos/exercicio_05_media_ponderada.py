@@ -9,3 +9,5 @@ Calcule e exiba a média final ponderada utilizando apenas operadores aritmétic
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+
+
