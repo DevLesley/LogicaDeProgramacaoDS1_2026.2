@@ -14,3 +14,8 @@ Imprima: novo salário, valor do reajuste ganho e percentual aplicado.
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+
+salario = float(input("Digite o seu salário recebido: "))
+if salario >= 0.00 and salario <= 400.00:
+    reajuste = 15 
+    
