@@ -21,3 +21,16 @@ SUA MISSÃO:
 #     taxa = faturamento * 0.15
 
 # TODO: Escreva aqui a versão corrigida:
+
+faturamento = float(input("Informe o faturamento anual: "))
+if faturamento < 0:
+    print("Valor inválido.")
+elif faturamento > 0 < 50000:
+    taxa = faturamento * 0.05
+    print(f"Sua taxa é {taxa}R$")
+elif faturamento > 50000 < 100000:
+    taxa = faturamento * 0.10
+    print(f"Sua taxa é {taxa}R$")
+elif faturamento > 100000:
+    taxa = faturamento * 0.15
+    print(f"Sua taxa é {taxa}R$")
