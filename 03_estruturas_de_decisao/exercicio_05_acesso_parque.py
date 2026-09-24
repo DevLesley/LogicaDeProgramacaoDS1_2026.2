@@ -12,3 +12,19 @@ Imprima o tipo de bilhete e o valor final a pagar.
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+
+
+nome = input("Digite o seu nome: ")
+idade = int(input("Digite sua idade(ex:16 anos): "))
+if idade < 12:
+    desconto = 0.5 
+    preco = 100 * desconto
+    print(f"{nome} seu bilhete custará {preco}R$ você recebeu 50% de desconto!!")
+elif idade >= 60:
+    desconto = 0.0 
+    preco = 100 * desconto
+    print(f"{nome} seu bilhete custará {preco}R$ com 100% de desconto!!")
+elif idade >= 12 <60:
+    desconto = 1 
+    preco = 100 * desconto
+    print(f"{nome} seu bilhete custará {preco}R$ pagando o valor integral!!")
