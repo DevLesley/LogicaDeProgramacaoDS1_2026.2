@@ -9,3 +9,16 @@ Ao acertar, imprima "Acesso Permitido" e finalize o programa.
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+
+print("""Seja bem vindo ao laboratório
+
+""")
+senha_correta = 2002
+while True:
+    tentativa = int(input("Digite a senha de acesso: "))
+    if tentativa == senha_correta:
+        break
+    if tentativa != senha_correta:
+        print("Senha Invalida... Tente novamente...")
+        continue
+print("Senha correta.")
