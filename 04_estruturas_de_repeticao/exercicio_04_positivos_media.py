@@ -9,3 +9,9 @@ Imprima a quantidade de positivos e a média formatada com 1 casa decimal.
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+contador_positivo = 0
+for numero in range(6):
+    if numero > 0:
+        contador_positivo = contador_positivo + 1
+    elif numero > 0:
+        

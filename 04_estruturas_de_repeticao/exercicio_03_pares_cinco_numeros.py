@@ -16,4 +16,4 @@ for i in range(5):
         contador = contador + 1
     else:
         continue
-print(contador) 
+print(f"Foi digitado {contador} números pares.") 
