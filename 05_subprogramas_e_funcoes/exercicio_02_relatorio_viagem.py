@@ -17,15 +17,19 @@ preco_combustivel = int(input("Digite o preço do combustível: "))
 qtd_pessoas = int(input("Digite a quantidade de pessoas: "))
 dias = int(input("Digite quantos dias: "))
 diaria_alimentacao = int(input("Digite a diária da alimentação: "))
-
 def calcular_custo_transporte(distancia_km, consumo_kml, preco_combustivel) :
     valorTransporte = (distancia_km * consumo_kml) * preco_combustivel
-    return calcular_custo_transporte
+    return valorTransporte
 def calcular_custo_alimentacao(qtd_pessoas, dias, diaria_alimentacao) :
     valorAlimentacao = (qtd_pessoas * dias) * diaria_alimentacao
-    return calcular_custo_alimentacao
-valorTotal = (calcular_custo_alimentacao(qtd_pessoas, dias, diaria_alimentacao)) + (calcular_custo_transporte(distancia_km, consumo_kml, preco_combustivel))
-print(f""" Com um custo de alimentação de: {calcular_custo_alimentacao(qtd_pessoas, dias, diaria_alimentacao)}
-E um custo de transporte de: {calcular_custo_transporte(distancia_km, consumo_kml, preco_combustivel)}
+    return valorAlimentacao
+valorTransporte = calcular_custo_transporte(distancia_km, consumo_kml, preco_combustivel)
+valorAlimentacao = calcular_custo_alimentacao(qtd_pessoas, dias, diaria_alimentacao)
+def calcularTotal(valorTransporte, valorAlimentacao) :
+    valorTotal = valorTransporte + valorAlimentacao
+    return valorTotal
+valorTotal = calcularTotal(valorTransporte, valorAlimentacao)
+print(f""" Com um custo de alimentação de: {valorAlimentacao}
+E um custo de transporte de: {valorTransporte}
 O valor total ficou: {valorTotal}
 """)
